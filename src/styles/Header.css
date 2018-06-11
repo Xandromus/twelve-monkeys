@@ -13,4 +13,5 @@
   header {
     color: #F3EFF5;
     background-color: #000F08;
+    overflow-x: hidden;
   }

@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     return (
       <div>
      
-        
+     <nav>
         <div className="row">
     
           <div className="nav-item col-4">
@@ -16,12 +16,12 @@ export default class Navbar extends Component {
               Click a monkey to begin!
             </div>
             <div className="nav-item col-4 my-auto">
-              Your score : | High Score :
+              Your score : | High score :
             </div>
         
           
         </div>
-    
+    </nav>
       </div>
     )
   }
