@@ -14,14 +14,16 @@ class App extends Component {
 
   handleScore = () => {
     const newScore = this.state.score + 1;
-    this.setState({
-      score: newScore
-    });
-    if (newScore >= this.state.highScore) {
-      this.setState({ highScore: newScore });
-    }
-    else if (newScore === 12) {
+    if (newScore < 13) {
+      this.setState({
+        score: newScore
+      });
+      if (newScore >= this.state.highScore) {
+        this.setState({ highScore: newScore });
+      }
+    } else {
       alert("you win");
+      this.setState({score: 0, highScore: 0});
     }
   }
 
@@ -29,11 +31,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header
-        score={this.state.score}
-        highScore={this.state.highScore}
+          score={this.state.score}
+          highScore={this.state.highScore}
         />
         <Main
-        handleScore={this.handleScore}
+          handleScore={this.handleScore}
         />
       </div>
     );
