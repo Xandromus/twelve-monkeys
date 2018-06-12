@@ -68,6 +68,12 @@ let monkeyArray = [
 
 
 export default class Main extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      shuffle: false
+    }
+  }
 
   shuffleMonkeys = (array) => {
     for (let i = array.length -1; i > 0; i--) {
@@ -79,20 +85,25 @@ export default class Main extends Component {
     return array;
   }
 
+  handleClick = () => {
+    this.setState({shuffle: true})
+    this.shuffleMonkeys(monkeyArray);
+  }
+
   render() {
-    const shuffledMonkeys = this.shuffleMonkeys(monkeyArray);
     return (
       <div>
       <div className="jumbotron">
         <p>Click on all 12 monkeys to earn points, but don't click on any monkey more than once!</p>
       </div>
       <div className="container monkey-pen">
-      {shuffledMonkeys.map(image => 
+      {monkeyArray.map(image => 
           <Monkey 
             src={image.src}
             alt={image.name}
             id={image.id}
             key={image.id}
+            handleClick={this.handleClick}
           />)}
 
       </div>
