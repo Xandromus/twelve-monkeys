@@ -20,16 +20,14 @@ class App extends Component {
       this.setState({ alreadyClicked: [] });
     } else {
       this.setState({ alreadyClicked: [...this.state.alreadyClicked, id] });
-      alert(this.state.alreadyClicked);
       const newScore = this.state.score + 1;
-      if (newScore < 13) {
-        this.setState({
-          score: newScore
-        });
-        if (newScore >= this.state.highScore) {
-          this.setState({ highScore: newScore });
-        }
-      } else {
+      this.setState({
+        score: newScore
+      });
+      if (newScore >= this.state.highScore) {
+        this.setState({ highScore: newScore });
+      }
+      if (newScore === 12) {
         alert("you win");
         this.setState({ score: 0 });
         this.setState({ alreadyClicked: [] });
