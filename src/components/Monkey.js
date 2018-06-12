@@ -5,6 +5,7 @@ export default class Monkey extends Component {
   constructor(props) {
     super(props)
   }
+  
   render() {
     return (
       <img className="img-fluid monkey"
