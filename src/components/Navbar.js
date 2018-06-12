@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/Navbar.css";
+import Counter from './Counter';
 
 export default class Navbar extends Component {
   render() {
@@ -16,7 +17,7 @@ export default class Navbar extends Component {
               Click a monkey to begin!
             </div>
             <div className="nav-item col-4 my-auto">
-              Your score : | High score :
+              Your score : <Counter /> | High score :
             </div>
         
           

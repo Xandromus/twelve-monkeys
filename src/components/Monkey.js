@@ -10,6 +10,7 @@ export default class Monkey extends Component {
       <img className="img-fluid monkey"
       src={this.props.src} 
       alt={this.props.name}
+      onClick={this.props.handleIncrement}
       />
     )
   }

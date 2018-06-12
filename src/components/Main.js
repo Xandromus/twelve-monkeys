@@ -65,15 +65,29 @@ let monkeyArray = [
   },
 ]
 
+
+
 export default class Main extends Component {
+
+  shuffleMonkeys = (array) => {
+    for (let i = array.length -1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  }
+
   render() {
+    const shuffledMonkeys = this.shuffleMonkeys(monkeyArray);
     return (
       <div>
       <div className="jumbotron">
         <p>Click on all 12 monkeys to earn points, but don't click on any monkey more than once!</p>
       </div>
       <div className="container monkey-pen">
-      {monkeyArray.map(image => 
+      {shuffledMonkeys.map(image => 
           <Monkey 
             src={image.src}
             alt={image.name}
