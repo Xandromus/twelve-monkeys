@@ -8,22 +8,32 @@ class App extends Component {
     super(props)
     this.state = {
       score: 0,
-      highScore: 0
+      highScore: 0,
+      alreadyClicked: []
     }
   }
 
-  handleScore = () => {
-    const newScore = this.state.score + 1;
-    if (newScore < 13) {
-      this.setState({
-        score: newScore
-      });
-      if (newScore >= this.state.highScore) {
-        this.setState({ highScore: newScore });
-      }
+  handleScore = (id) => {
+    if (this.state.alreadyClicked.includes(id)) {
+      alert("you lose");
+      this.setState({ score: 0 });
+      this.setState({ alreadyClicked: [] });
     } else {
-      alert("you win");
-      this.setState({score: 0, highScore: 0});
+      this.setState({ alreadyClicked: [...this.state.alreadyClicked, id] });
+      alert(this.state.alreadyClicked);
+      const newScore = this.state.score + 1;
+      if (newScore < 13) {
+        this.setState({
+          score: newScore
+        });
+        if (newScore >= this.state.highScore) {
+          this.setState({ highScore: newScore });
+        }
+      } else {
+        alert("you win");
+        this.setState({ score: 0 });
+        this.setState({ alreadyClicked: [] });
+      }
     }
   }
 

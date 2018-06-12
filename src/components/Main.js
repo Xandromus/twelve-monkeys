@@ -21,8 +21,8 @@ export default class Main extends Component {
     return array;
   }
 
-  handleClick = () => {
-    this.props.handleScore();
+  handleClick = (id) => {
+    this.props.handleScore(id);
     this.setState({shuffle: true})
     this.shuffleMonkeys(monkeyArray);
   }
