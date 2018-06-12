@@ -86,7 +86,7 @@ export default class Main extends Component {
   }
 
   handleClick = () => {
-    
+    this.props.handleScore();
     this.setState({shuffle: true})
     this.shuffleMonkeys(monkeyArray);
   }
