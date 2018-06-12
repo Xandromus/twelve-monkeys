@@ -1,71 +1,7 @@
 import React, { Component } from 'react';
 import Monkey from "./Monkey";
+import monkeyArray from "../monkeyArray.json";
 import "../styles/Main.css";
-
-let monkeyArray = [
-  {
-    id: "01",
-    src: "assets/images/bluemonkey.jpg",
-    name: "Blue Monkey"
-  },
-  {
-    id: "02",
-    src: "assets/images/capuchin.jpg",
-    name: "Capuchin"
-  },
-  {
-    id: "03",
-    src: "assets/images/gibbon.jpg",
-    name: "Gibbon"
-  },
-  {
-    id: "04",
-    src: "assets/images/macaque.jpg",
-    name: "Macaque"
-  },
-  {
-    id: "05",
-    src: "assets/images/mandrill.jpg",
-    name: "Mandrill"
-  },
-  {
-    id: "06",
-    src: "assets/images/marmoset.jpg",
-    name: "Marmoset"
-  },
-  {
-    id: "07",
-    src: "assets/images/proboscis.jpg",
-    name: "Proboscis"
-  },
-  {
-    id: "08",
-    src: "assets/images/rhesus.jpg",
-    name: "Rhesus"
-  },
-  {
-    id: "09",
-    src: "assets/images/spidermonkey.jpg",
-    name: "Spider Monkey"
-  },
-  {
-    id: "10",
-    src: "assets/images/squirrelmonkey.jpg",
-    name: "Squirrel Monkey"
-  },
-  {
-    id: "11",
-    src: "assets/images/tamarin.jpg",
-    name: "Tamarin"
-  },
-  {
-    id: "12",
-    src: "assets/images/vervet.jpg",
-    name: "Vervet"
-  },
-]
-
-
 
 export default class Main extends Component {
   constructor(props) {
