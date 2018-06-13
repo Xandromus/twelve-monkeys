@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Main from './components/Main';
 import Header from './components/Header';
 import './App.css';
+import StatusModal from './components/StatusModal';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -9,15 +11,15 @@ class App extends Component {
     this.state = {
       score: 0,
       highScore: 0,
-      alreadyClicked: []
+      alreadyClicked: [],
+      openModal: false,
+      message: ""
     }
   }
 
   handleScore = (id) => {
     if (this.state.alreadyClicked.includes(id)) {
-      alert("you lose");
-      this.setState({ score: 0 });
-      this.setState({ alreadyClicked: [] });
+      this.setState({ score: 0, alreadyClicked: [], openModal: true, message: "You lost!" });
     } else {
       this.setState({ alreadyClicked: [...this.state.alreadyClicked, id] });
       const newScore = this.state.score + 1;
@@ -28,11 +30,15 @@ class App extends Component {
         this.setState({ highScore: newScore });
       }
       if (newScore === 12) {
-        alert("you win");
-        this.setState({ score: 0 });
-        this.setState({ alreadyClicked: [] });
+        this.setState({ score: 0, alreadyClicked: [], openModal: true, message: "You won!" });
       }
     }
+  }
+
+  toggle = () => {
+    this.setState({
+      openModal: false
+    });
   }
 
   render() {
@@ -45,6 +51,12 @@ class App extends Component {
         <Main
           handleScore={this.handleScore}
         />
+        <StatusModal
+        openModal={this.state.openModal}
+        message={this.state.message}
+        toggle={this.toggle}
+        />
+        <Footer />
       </div>
     );
   }
