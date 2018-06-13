@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
+let centered = true;
+
 export default class StatusModal extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +22,7 @@ export default class StatusModal extends React.Component {
   render() {
     return (
       <div>
-        <Modal isOpen={this.props.openModal} centered="true" toggle={this.toggle} className={this.props.className}>
+        <Modal isOpen={this.props.openModal} centered={centered} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>{this.props.message}</ModalHeader>
           <ModalBody>
             Close the dialog to play again

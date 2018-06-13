@@ -9,7 +9,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <header className="header">
+      <header className="header sticky-top">
         <Navbar
         score={this.props.score}
         highScore={this.props.highScore}

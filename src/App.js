@@ -44,19 +44,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header
-          score={this.state.score}
-          highScore={this.state.highScore}
-        />
-        <Main
-          handleScore={this.handleScore}
-        />
-        <StatusModal
-        openModal={this.state.openModal}
-        message={this.state.message}
-        toggle={this.toggle}
-        />
-        <Footer />
+        <div className="wrapper">
+          <Header
+            score={this.state.score}
+            highScore={this.state.highScore}
+          />
+          <Main
+            handleScore={this.handleScore}
+          />
+          <StatusModal
+            openModal={this.state.openModal}
+            message={this.state.message}
+            toggle={this.toggle}
+          />
+          <Footer />
+        </div>
       </div>
     );
   }
