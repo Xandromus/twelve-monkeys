@@ -3,7 +3,7 @@ import "../styles/Monkey.css";
 
 export default class Monkey extends Component {
   constructor(props) {
-    super(props)
+    super()
   }
 
   render() {

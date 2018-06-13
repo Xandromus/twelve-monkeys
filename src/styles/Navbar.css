@@ -2,9 +2,55 @@
     font-family: 'norwesterregular', sans-serif;
     color: #ED1C24;
     font-size: 48px!important;
+    margin-left: 10px;
 }
 
 .nav-item {
     font-size: 20px;
     font-family: 'Acme', sans-serif;
+}
+
+/* Tablet portrait */
+
+@media screen and (max-width: 991px) {
+    .navbar-brand {
+        font-size: 40px!important;
+    }
+    .nav-item {
+        font-size: 18px;
+    }
+}
+
+/* Tablet portrait */
+
+@media screen and (max-width: 798px) {
+    .navbar-brand {
+        font-size: 32px!important;
+    }
+    .nav-item {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar-brand {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .nav-item {
+        margin: 2px auto 10px auto!important;
+        font-size: 4vw;
+    }
+    .brand-container {
+        margin: 0 auto!important;
+    }
+}
+
+
+/* Mobile phones */
+
+@media screen and (max-width: 385px) {
+    .nav-item {
+        font-size: 5vw;
+    }
 }
