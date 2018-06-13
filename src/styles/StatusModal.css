@@ -1,0 +1,29 @@
+.modal-content {
+    background-color: #ED1C24;
+    color: #F3EFF5;
+    font-family: 'Acme', sans-serif;
+}
+
+.btn-primary {
+    color: #F3EFF5;
+    background-color: #000F08;
+    border-color: #000F08;
+}
+
+.btn-primary:hover {
+    color: #000F08;
+    background-color: #F3EFF5;
+    border-color: #F3EFF5;
+    box-shadow: none;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    color: #F3EFF5;
+    background-color: #000F08;
+    border-color: #000F08;
+    box-shadow: none;
+}

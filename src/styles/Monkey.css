@@ -1,11 +1,12 @@
 .monkey {
     max-width: 250px;
     margin: 10px;
-    border: 5px solid white;
+    border: 5px solid #F3EFF5;
     box-shadow: 3px 3px 5px rgba(0,0,0,.6);
 }
 
 .monkey:hover {
     transform: scale(1.01);
+    transition: all .2s ease-in-out;
     cursor: pointer;
 }
