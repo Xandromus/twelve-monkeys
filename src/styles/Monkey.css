@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-#monkey01 {
+/* #monkey01 {
     animation: fadeIn 1s ease-in-out 0.2s;
     transition: all .3s ease-in-out;
     animation-fill-mode: backwards;
@@ -81,4 +81,4 @@
     animation: fadeIn 1s ease-in-out 2.4s;
     transition: all .3s ease-in-out;
     animation-fill-mode: backwards;
-}
+} */
