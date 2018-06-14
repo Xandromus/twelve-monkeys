@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import "../styles/Navbar.css";
 
 export default class Navbar extends Component {
-  constructor(props) {
-    super()
-  }
 
   render() {
     return (

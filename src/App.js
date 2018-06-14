@@ -13,13 +13,20 @@ class App extends Component {
       highScore: 0,
       alreadyClicked: [],
       openModal: false,
-      message: ""
+      message: "",
+      bodyMessage: ""
     }
   }
 
   handleScore = (id) => {
     if (this.state.alreadyClicked.includes(id)) {
-      this.setState({ score: 0, alreadyClicked: [], openModal: true, message: "You lost!" });
+      this.setState({
+        score: 0,
+        alreadyClicked: [],
+        openModal: true,
+        message: "You lost!",
+        bodyMessage: "Quit monkeying around! Close to play again . . ."
+      });
     } else {
       this.setState({ alreadyClicked: [...this.state.alreadyClicked, id] });
       const newScore = this.state.score + 1;
@@ -30,15 +37,29 @@ class App extends Component {
         this.setState({ highScore: newScore });
       }
       if (newScore === 12) {
-        this.setState({ score: 0, alreadyClicked: [], openModal: true, message: "You won!" });
+        this.setState({
+          score: 0,
+          alreadyClicked: [],
+          openModal: true,
+          message: "You won!",
+          bodyMessage: "That was more fun than a barrel of monkeys! Close to play again . . ."
+        });
       }
     }
   }
 
-  toggle = () => {
-    this.setState({
-      openModal: false
-    });
+  renderModal = () => {
+    if (this.state.openModal) {
+      return <StatusModal
+      message={this.state.message}
+      bodyMessage={this.state.bodyMessage}
+      resetModal={this.resetModal}
+    />
+    } 
+  }
+
+  resetModal = () => {
+      this.setState({openModal: false});
   }
 
   render() {
@@ -52,11 +73,7 @@ class App extends Component {
           <Main
             handleScore={this.handleScore}
           />
-          <StatusModal
-            openModal={this.state.openModal}
-            message={this.state.message}
-            toggle={this.toggle}
-          />
+          {this.renderModal()}
           <Footer />
         </div>
       </div>

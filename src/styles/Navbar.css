@@ -10,7 +10,7 @@
     font-family: 'Acme', sans-serif;
 }
 
-/* Tablet portrait */
+/* Media Queries */
 
 @media screen and (max-width: 991px) {
     .navbar-brand {

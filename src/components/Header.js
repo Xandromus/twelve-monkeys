@@ -3,9 +3,6 @@ import Navbar from './Navbar';
 import "../styles/Header.css";
 
 export default class Header extends Component {
-  constructor(props) {
-    super()
-  }
 
   render() {
     return (

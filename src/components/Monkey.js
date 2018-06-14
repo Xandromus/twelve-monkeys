@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import "../styles/Monkey.css";
 
 export default class Monkey extends Component {
-  constructor(props) {
-    super()
-  }
 
   render() {
     return (

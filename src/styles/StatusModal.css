@@ -1,3 +1,11 @@
+.modal {
+    padding-right: 16px!important;
+}
+
+.modal-body {
+    font-size: 24px;
+}
+
 .modal-content {
     background-color: #ED1C24;
     color: #F3EFF5;
@@ -26,4 +34,50 @@
     background-color: #000F08;
     border-color: #000F08;
     box-shadow: none;
+}
+
+.close {
+    color: #F3EFF5;
+    text-shadow: none;
+}
+
+.close:hover,
+.close:active {
+    color: #000F08;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+    .modal-body {
+        font-size: 22px;
+    }
+}
+
+/* Tablet portrait */
+
+@media screen and (max-width: 798px) {
+    .modal-body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .modal-body {
+        font-size: 16px;
+    }
+    .modal-content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Mobile phones */
+
+@media screen and (max-width: 385px) {
+    .modal-body {
+        font-size: 12px;
+    }
 }
