@@ -50,6 +50,9 @@
 /* Mobile phones */
 
 @media screen and (max-width: 385px) {
+    .navbar-brand {
+        font-size: 28px!important;
+    }
     .nav-item {
         font-size: 5vw;
     }
