@@ -22,7 +22,6 @@ class App extends Component {
   handleScore = (id) => {
     if (this.state.alreadyClicked.includes(id)) {
       this.setState({
-        score: 0,
         alreadyClicked: [],
         openModal: true,
         message: "You lost!",
@@ -39,7 +38,6 @@ class App extends Component {
       }
       if (newScore === 12) {
         this.setState({
-          score: 0,
           alreadyClicked: [],
           openModal: true,
           message: "You won!",
@@ -60,7 +58,7 @@ class App extends Component {
   }
 
   resetModal = () => {
-      this.setState({openModal: false});
+      this.setState({openModal: false, score: 0});
   }
 
   removeAnimation = () => {
