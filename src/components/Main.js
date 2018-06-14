@@ -41,9 +41,9 @@ export default class Main extends Component {
                 alt={image.name}
                 id={image.id}
                 key={image.id}
-                fade={this.props.fade}
+                animate={this.props.animate}
                 handleClick={this.handleClick}
-                removeFade={this.props.removeFade}
+                removeAnimation={this.props.removeAnimation}
               />)}
 
           </div>

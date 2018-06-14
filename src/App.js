@@ -15,7 +15,7 @@ class App extends Component {
       openModal: false,
       message: "",
       bodyMessage: "",
-      fade: " fader"
+      animate: " animate"
     }
   }
 
@@ -63,8 +63,8 @@ class App extends Component {
       this.setState({openModal: false});
   }
 
-  removeFade = () => {
-    this.setState({ fade: "" });
+  removeAnimation = () => {
+    this.setState({ animate: "" });
 }
 
   render() {
@@ -77,8 +77,8 @@ class App extends Component {
           />
           <Main
             handleScore={this.handleScore}
-            fade={this.state.fade}
-            removeFade={this.removeFade}
+            animate={this.state.animate}
+            removeAnimation={this.removeAnimation}
           />
           {this.renderModal()}
           <Footer />

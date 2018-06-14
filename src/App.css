@@ -55,3 +55,21 @@ body {
       opacity: 1;
   }
 }
+
+@keyframes flipIt {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
+@keyframes flipBack {
+  from {
+      transform: rotateY(360deg);
+  }
+  to {
+      transform: rotateY(0deg);
+  }
+}

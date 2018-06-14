@@ -9,7 +9,6 @@ footer {
     margin: 0 auto;
     clear: both;
     text-align: center;
-    background-color: #ED1C24;
     color: #F3EFF5;
     font-family: 'Acme', sans-serif;
 }
@@ -22,6 +21,7 @@ footer p {
     text-align: center;
     margin: 0 auto;
     font-size: 1.5rem;
+    text-shadow: 3px 3px 5px #000F08;
 }
 
 @media screen and (max-width: 385px) {
