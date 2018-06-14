@@ -72,10 +72,6 @@ body.modal-open {
         margin-left: auto;
         margin-right: auto;
     }
-    body.modal-open {
-        margin-right: -6px!important;
-        padding-right: 8px;
-    }
 }
 
 
