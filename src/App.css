@@ -12,28 +12,15 @@
   font-style: normal;
 }
 
+#root {
+  height: 100%;
+  position: relative;
+}
+
 .App {
+  height: 100%;
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 /* BASIC STYLES */
@@ -56,6 +43,8 @@ body {
   min-height: 100%;
   padding: 0 0 100px;
   position: relative;
+  background: url("./jungle.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 @keyframes fadeIn {

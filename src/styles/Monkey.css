@@ -1,4 +1,5 @@
 .monkey {
+    width: 20%;
     max-width: 250px;
     margin: 10px;
     border: 5px solid #F3EFF5;
@@ -85,4 +86,42 @@
     animation-delay: 2.4s;
     transition: all .3s ease-in-out;
     animation-fill-mode: backwards;
+}
+
+
+/* Tablet portrait */
+
+@media screen and (max-width: 991px) {
+    .monkey {
+        margin: 8px;
+        border: 4px solid #F3EFF5;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+    }
+}
+
+/* Tablet portrait */
+
+@media screen and (max-width: 798px) {
+    .monkey {
+        margin: 7px;
+        border: 4px solid #F3EFF5;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .monkey {
+        width: 25%;
+    }
+}
+
+
+/* Mobile phones */
+
+@media screen and (max-width: 385px) {
+    .monkey {
+        margin: 5px;
+        border: 2px solid #F3EFF5;
+        box-shadow: 1px 1px 3px rgba(0,0,0,.6);
+    }
 }
