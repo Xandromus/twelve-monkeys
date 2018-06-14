@@ -14,7 +14,8 @@ class App extends Component {
       alreadyClicked: [],
       openModal: false,
       message: "",
-      bodyMessage: ""
+      bodyMessage: "",
+      fade: " fader"
     }
   }
 
@@ -62,6 +63,10 @@ class App extends Component {
       this.setState({openModal: false});
   }
 
+  removeFade = () => {
+    this.setState({ fade: "" });
+}
+
   render() {
     return (
       <div className="App">
@@ -72,6 +77,8 @@ class App extends Component {
           />
           <Main
             handleScore={this.handleScore}
+            fade={this.state.fade}
+            removeFade={this.removeFade}
           />
           {this.renderModal()}
           <Footer />
