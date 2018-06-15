@@ -1,3 +1,5 @@
+/* STATUS MODAL (from ReactStrap) */
+
 .modal-body {
     font-size: 24px;
 }
@@ -8,10 +10,7 @@
     font-family: 'Acme', sans-serif;
 }
 
-body.modal-open {
-    margin-right: -16px!important;
-    padding-right: 16px;
-}
+/* MODAL BUTTONS */
 
 .btn-primary {
     color: #F3EFF5;
@@ -47,7 +46,10 @@ body.modal-open {
     color: #000F08;
 }
 
-/* Media Queries */
+
+/* MEDIA QUERIES */
+
+/* 991px */
 
 @media screen and (max-width: 991px) {
     .modal-body {
@@ -55,13 +57,15 @@ body.modal-open {
     }
 }
 
-/* Tablet portrait */
+/* 798px */
 
 @media screen and (max-width: 798px) {
     .modal-body {
         font-size: 20px;
     }
 }
+
+/* 575px */
 
 @media screen and (max-width: 575px) {
     .modal-body {
@@ -74,8 +78,7 @@ body.modal-open {
     }
 }
 
-
-/* Mobile phones */
+/* 385px */
 
 @media screen and (max-width: 385px) {
     .modal-body {

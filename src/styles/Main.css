@@ -1,17 +1,3 @@
-.jumbotron {
-    background-color: #ED1C24;
-    font-family: 'norwesterregular', sans-serif;
-    color: #F3EFF5;
-    font-size: 24px;
-    border-radius: 0;
-    max-height: 100px;
-    padding: 30px!important;
-}
-
-.breakpoint::after {
-    content: " ";
-}
-
 /* MAIN */
 
 .main {
@@ -37,7 +23,25 @@
     max-width: 1350px;
 }
 
-/* Tablet portrait */
+/* JUMBOTRON */
+
+.jumbotron {
+    background-color: #ED1C24;
+    font-family: 'norwesterregular', sans-serif;
+    color: #F3EFF5;
+    font-size: 24px;
+    border-radius: 0;
+    max-height: 100px;
+    padding: 30px!important;
+}
+
+.breakpoint::after {
+    content: " ";
+}
+
+/* MEDIA QUERIES */
+
+/* 991px */
 
 @media screen and (max-width: 991px) {
     .jumbotron {
@@ -49,7 +53,7 @@
     }
 }
 
-/* Tablet portrait */
+/* 798px */
 
 @media screen and (max-width: 798px) {
     .jumbotron {
@@ -62,6 +66,8 @@
     }
 }
 
+/* 575px */
+
 @media screen and (max-width: 575px) {
     .jumbotron {
         font-size: 16px;
@@ -70,7 +76,7 @@
 }
 
 
-/* Mobile phones */
+/* 385px */
 
 @media screen and (max-width: 385px) {
     .jumbotron {

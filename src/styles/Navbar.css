@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 .navbar-brand {
     font-family: 'norwesterregular', sans-serif;
     color: #ED1C24;
@@ -12,6 +14,8 @@
 
 /* Media Queries */
 
+/* 991px */
+
 @media screen and (max-width: 991px) {
     .navbar-brand {
         font-size: 40px!important;
@@ -21,7 +25,7 @@
     }
 }
 
-/* Tablet portrait */
+/* 798px */
 
 @media screen and (max-width: 798px) {
     .navbar-brand {
@@ -31,6 +35,8 @@
         font-size: 14px;
     }
 }
+
+/* 575px */
 
 @media screen and (max-width: 575px) {
     .navbar-brand {
@@ -46,8 +52,7 @@
     }
 }
 
-
-/* Mobile phones */
+/* 385px */
 
 @media screen and (max-width: 385px) {
     .navbar-brand {

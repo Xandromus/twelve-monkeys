@@ -1,3 +1,5 @@
+/* MONKEY IMAGES */
+
 .monkey {
     width: 20%;
     max-width: 250px;
@@ -12,11 +14,15 @@
     cursor: pointer;
 }
 
+/* ANIMATE CLASS */
+
 .animate {
     animation: fadeIn 1s ease-in-out, flipIt 2s ease-in-out;
     transition: all .3s ease-in-out;
     animation-fill-mode: backwards;
 }
+
+/* ANIMATION TIMING */
 
 #monkey01 {
     animation-delay: 0.2s;
@@ -66,8 +72,9 @@
     animation-delay: 2.4s;
 }
 
+/* MEDIA QUERIES */
 
-/* Tablet portrait */
+/* 991px */
 
 @media screen and (max-width: 991px) {
     .monkey {
@@ -77,7 +84,7 @@
     }
 }
 
-/* Tablet portrait */
+/* 798px */
 
 @media screen and (max-width: 798px) {
     .monkey {
@@ -87,14 +94,15 @@
     }
 }
 
+/* 575px */
+
 @media screen and (max-width: 575px) {
     .monkey {
         width: 25%;
     }
 }
 
-
-/* Mobile phones */
+/* 385px */
 
 @media screen and (max-width: 385px) {
     .monkey {

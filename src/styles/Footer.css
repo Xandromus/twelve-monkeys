@@ -24,6 +24,10 @@ footer p {
     text-shadow: 3px 3px 5px #000F08;
 }
 
+/* MEDIA QUERIES */
+
+/* 385px */
+
 @media screen and (max-width: 385px) {
     footer p {
         font-size: 1.2rem;

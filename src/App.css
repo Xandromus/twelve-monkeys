@@ -1,4 +1,8 @@
+/* GOOGLE FONT IMPORT */
+
 @import url("https://fonts.googleapis.com/css?family=Acme");
+
+/* CUSTOM FONT IMPORT */
 
 @font-face {
   font-family: 'norwesterregular';
@@ -11,6 +15,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* ROOT AND APP STYLES */
 
 #root {
   height: 100%;
@@ -47,6 +53,10 @@ body {
   background-size: cover;
 }
 
+/* ANIMATIONS */
+
+/* FADE IN */
+
 @keyframes fadeIn {
   0% {
       opacity: 0;
@@ -56,20 +66,13 @@ body {
   }
 }
 
+/* FLIP */
+
 @keyframes flipIt {
   from {
       transform: rotateY(0deg);
   }
   to {
       transform: rotateY(360deg);
-  }
-}
-
-@keyframes flipBack {
-  from {
-      transform: rotateY(360deg);
-  }
-  to {
-      transform: rotateY(0deg);
   }
 }
