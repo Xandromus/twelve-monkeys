@@ -34,7 +34,7 @@ export default class Main extends Component {
       <div className="main">
         <div className="container-fluid middle">
           <div className="jumbotron">
-            {/* <p>Click on all 12 monkeys to earn points,<span className="breakpoint"></span>but don't click on any monkey more than once!</p> */}
+            <p>Click on all 12 monkeys to earn points, but don't click on any monkey more than once!</p>
           </div>
           <div className="container-fluid monkey-pen">
             {monkeyArray.map(image =>
